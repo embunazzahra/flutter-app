@@ -22,10 +22,10 @@ class MyApp extends StatelessWidget {
           centerTitle: true,
           flexibleSpace: Container(
             decoration: BoxDecoration(
-                gradient: LinearGradient(colors: <Color>[
-              Colors.lightBlue[200],
-              Colors.purpleAccent[400]
-            ], begin: Alignment.topLeft, end: Alignment.bottomRight)),
+                gradient: LinearGradient(
+                    colors: <Color>[Colors.white70, Colors.purpleAccent],
+                    begin: Alignment.topRight,
+                    end: Alignment.bottomLeft)),
           ),
           actions: <Widget>[
             IconButton(
@@ -36,6 +36,13 @@ class MyApp extends StatelessWidget {
             ))
           ],
           brightness: Brightness.dark,
+        ),
+        body: Container(
+          decoration: BoxDecoration(
+              gradient: LinearGradient(colors: <Color>[
+            Colors.purpleAccent,
+            Colors.blue[100],
+          ], begin: Alignment.topLeft, end: Alignment.bottomRight)),
         ),
       ),
     );
