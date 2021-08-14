@@ -12,7 +12,7 @@ class MyBox extends StatelessWidget {
       height: 100,
       decoration: BoxDecoration(
           color: Colors.white,
-          borderRadius: BorderRadius.circular(10),
+          borderRadius: BorderRadius.circular(20),
           boxShadow: [
             BoxShadow(
                 color: Colors.grey.withOpacity(0.3),
@@ -45,8 +45,8 @@ class MyApp extends StatelessWidget {
           flexibleSpace: Container(
             decoration: BoxDecoration(
                 gradient: LinearGradient(colors: <Color>[
+              Colors.purpleAccent[100],
               Colors.lightBlue[200],
-              Colors.purpleAccent[400]
             ], begin: Alignment.topRight, end: Alignment.bottomLeft)),
           ),
           actions: <Widget>[
@@ -62,8 +62,8 @@ class MyApp extends StatelessWidget {
         body: Container(
           decoration: BoxDecoration(
               gradient: LinearGradient(colors: <Color>[
-            Colors.purpleAccent,
             Colors.blue[100],
+            Colors.purple[200],
           ], begin: Alignment.topLeft, end: Alignment.bottomRight)),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
